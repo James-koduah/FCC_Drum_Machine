@@ -1,0 +1,59 @@
+*{
+    padding: 0 0 0 0;
+    margin:0 0 0 0;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#drum-machine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#beats{
+    width: 40vw;
+    height: 40vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0 0.5vw 0;
+}
+
+    #keys{
+        width:25vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+        #keys button {
+            width: 90%;
+            height: 90%;
+            border-radius: 0.5vw;
+            border-width: 0.1vw;
+            font-size: 200%;
+            background: rgb(56, 55, 55);
+            color: white;
+            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw black;
+        }
+
+#display{
+    width: 20vw;
+    height: 40vh;
+    background-color: gray;
+    padding: 1vw 0 0.5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
