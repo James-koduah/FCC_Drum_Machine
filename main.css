@@ -17,6 +17,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #beats{
@@ -45,7 +46,7 @@ body{
             font-size: 200%;
             background: rgb(56, 55, 55);
             color: white;
-            box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw black;
+            box-shadow: 0.2vw 0.5vw 0.5vw black;
         }
 
 #display{
@@ -57,3 +58,26 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+ #display p{
+    min-width: 9vw;
+    min-height: 5vh;
+    background: rgb(56, 55, 55);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.2vw 0.5vw 0.5vw black;
+ }
+
+
+ @media (max-width: 750px) {
+    #beats{height: 30vh;}
+    #keys{height: 30vh;}
+    #display{height: 30vh;}
+ }
+ @media (max-width: 1000px) {
+    #beats{height: 35vh;}
+    #keys{height: 35vh;}
+    #display{height: 35vh;}
+ }

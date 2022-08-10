@@ -112,7 +112,7 @@ const bankOne = [
     }
   ];
 
-let display = document.getElementById('display')
+let displayp = document.getElementById('displayp')
 function beat(e){
     
     if(e.id==='Heater-1'){
@@ -152,7 +152,7 @@ function beat(e){
         tt.play()
     }
     
-    display.innerHTML=e.id
+    displayp.innerHTML=e.id
 
 }
 
@@ -161,7 +161,12 @@ document.addEventListener('keydown', ww)
 
 function ww(e){
     let mm = document.getElementById(e.key.toUpperCase())
-    return mm.play()
+    if(mm===null){
+      return ;
+    }
+    mm.play()
+    let ee=mm.parentElement.id
+    displayp.innerHTML=ee
 }
 
 
