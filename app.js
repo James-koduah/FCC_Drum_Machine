@@ -164,7 +164,8 @@ function ww(e){
     if(mm===null){
       return ;
     }
-    mm.play()
+    mm.play();
+    mm.playbackRate=2;
     let ee=mm.parentElement.id
     displayp.innerHTML=ee
 }
